@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: m;
+}
+.item3 {
+  grid-area: l;
+}
+.item4 {
+  grid-area: r;
+}
+.item5 {
+  grid-area: footer;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header "
+    "m m m m "
+    "l l r r "
+    " footer  footer footer footer ";
+  grid-gap: 1px;
+  background-color: rgb(45, 134, 121);
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+}
+@font-face {
+  font-family: myFont;
+  src: url("../font/楷体/楷体.ttf");
+}
+.item1 {
+  background: linear-gradient(to top, #ffffff, #6dd5fa, #2980b9);
+  font-family: myFont;
+}
+.item2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+  border: 1px solid rgb(61, 164, 112);
+  border-radius: 5%;
+  width: 49%;
+  height: 100%;
+}
